@@ -1,0 +1,22 @@
+{
+  "name": "skel_bot_tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulAndreRada/skel_bot_tester.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulAndreRada/skel_bot_tester/issues"
+  },
+  "homepage": "https://github.com/PaulAndreRada/skel_bot_tester#readme",
+  "dependencies": {
+    "craneo": "^1.0.3"
+  }
+}
