@@ -1,10 +1,9 @@
 var app = require('express')();
 var http = require("http").Server(app);
 var io = require('socket.io')(http);
-var bot = require('craneo');
+var responseList = require('./response-list');
+var bot = require('craneo')({responseList: responseList});
 
-// import the bot
-bot();
 
 var __dirname = '/Users/Viki/gitHubReps/skel_bot_tester/public'
 

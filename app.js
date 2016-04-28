@@ -5,7 +5,7 @@ var responseList = require('./response-list');
 var bot = require('craneo')({responseList: responseList});
 
 
-var __dirname = '/Users/Viki/gitHubReps/skel_bot_tester/public'
+var __dirname = '/Users/Viki/gitHubReps/craneo-template/public'
 
 // render the index
 app.get('/', function(req, res){

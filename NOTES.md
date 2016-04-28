@@ -1,12 +1,6 @@
 Next:
-
-
-  //-THE BOT NEEDS TO NOT REPLACE THE RESPONSELIST PASSED BY THE USER
-
-
-
-  -command not found must come from the list
-
+  -Change the endchain response to false
+  (NO MORE endAbility)
 
   -Handle errors if someone passes something that is not an array into the response list
 
