@@ -20,8 +20,8 @@ node app.js
 ```
 
 ###Send the bot a message
-Open your browser to http://localhost:3000/.
-In the input bar on the bottom you can write a set of commands to the bot. 
+Open your browser to http://localhost:3000/.</br>
+In the input bar on the bottom you can write a set of commands to the bot.</br> 
 Available commands are: </br>
   -"Hey" or "Hello"</br>
   -"Chain", followed by either "Foo" or "Bar"</br>
@@ -29,6 +29,6 @@ Available commands are: </br>
   -"Show Breakout"</br>
   
 ### Next
-Whant to learn how to use Craneo? 
-Open the `response-list.js` file and try to figure out how those commands worked.
+Whant to learn how to use Craneo?</br>
+Open the `response-list.js` file and try to figure out how those commands worked.</br>
 Or you can check the <a href="http://paulandrerada.github.io/craneo/">Docs</a>.
