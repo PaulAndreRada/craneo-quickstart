@@ -1,60 +1,64 @@
 
 // responses
-var testEnd = require("./responses/test-end");
-var testChain = require("./responses/test-chain");
-var showBanana = function(context){
-    console.log('showBanana');
-    return false;
-}
-var showOrange = function(context){
-    console.log('showOrange');
-    return false;
-}
+var helloWorld = require("./responses/hello-world");
+var responseChain = require("./responses/response-chain");
 var commandNotFound = require("./responses/command-not-found");
 
-module.exports = [
-  // Pure Response Example
+// default responseList
+var responseList = [
+  // Basic Response Example
   {
-    name: "pureResponseExample",
-    response: testEnd,
+    name: "basicResponseExample",
+    response: helloWorld,
     commands: [
-      /^(.*?(\btest\b)[^$]*)$/i
+      /^(.*?(\bhello\b)[^$]*)$/i,
+      /^(.*?(\bhey\b)[^$]*)$/i
     ]
   },
 
   // Response Chain Example
   {
     name: "responseChainExample",
-    response: testChain,
+    response: responseChain,
     commands: [
-      /^(.*?(\btestchain\b)[^$]*)$/i
+      /^(.*?(\bchain\b)[^$]*)$/i
     ]
   },
 
-  // Reader Chain example
+  // Read Chain example
   {
-    name: 'testReaderOne',
+    name: 'readChainExample',
     response: 'read',
     commands: [/^(.*?(\bshow\b)[^$]*)$/i],
     responseList:
     [
       {
-        name: 'showBanana',
-        response: showBanana,
-        commands: [/^(.*?(\bbanana\b)[^$]*)$/i],
+        name: 'showSpaceInvaders',
+        response: function(context){
+          console.log('Space Invaders!');
+        },
+        commands: [/^(.*?(\binvaders\b)[^$]*)$/i],
       },
       {
-        name: 'showOrange',
-        response: showOrange,
-        commands: [/^(.*?(\borange\b)[^$]*)$/i],
+        name: 'showBreakout',
+        response: function(context){
+          console.log('Breakout!');
+          return false;
+        },
+        commands: [/^(.*?(\bbreakout\b)[^$]*)$/i],
       },
+      {
+        name:'commandNotFound',
+        response: commandNotFound,
+        commands: []
+      }
     ]
   },
-
   {
     name:'commandNotFound',
     response: commandNotFound,
     commands: []
   }
+]
 
-]// responseList
+module.exports = responseList;

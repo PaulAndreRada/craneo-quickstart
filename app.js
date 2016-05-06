@@ -1,13 +1,21 @@
 var app = require('express')();
 var http = require("http").Server(app);
 var io = require('socket.io')(http);
+
+// import your default response list
 var responseList = require('./response-list');
-var bot = require('craneo')({responseList: responseList});
+
+// import the Craneo framework
+var Craneo = require('craneo');
+
+/* Create an instance of your Craneo Bot
+ * Passing it the your default response list
+ */
+var bot = Craneo({responseList: responseList});
 
 
 var __dirname = '/Users/Viki/gitHubReps/craneo-template/public'
 
-// render the index
 app.get('/', function(req, res){
  res.sendFile(__dirname + '/index.html');
 });
@@ -17,7 +25,11 @@ io.on('connection',function(socket){
   console.log('a user connected');
 
   socket.on( "chat message", function(msg){
-   // activate the bot
+   /* Listen to an event
+    * Passing the message argument first followed by
+    * any other arguments you want passed down to your
+    * response function inside of an object
+    */
    bot.listen(msg, {socket: socket});
   });
 
