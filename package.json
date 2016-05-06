@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/PaulAndreRada/skel_bot_tester#readme",
   "dependencies": {
-    "craneo": "^1.0.3"
+    "craneo": "^1.0.4"
   }
 }
