@@ -16,11 +16,8 @@ app.get('/', function(req, res){
 io.on('connection',function(socket){
   console.log('a user connected');
 
-  // activate the bot
-  // why not just call setState? make the bot not rely on any socket framework
-
-
   socket.on( "chat message", function(msg){
+   // activate the bot
    bot.listen(msg, {socket: socket});
   });
 

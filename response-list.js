@@ -4,11 +4,11 @@ var testEnd = require("./responses/test-end");
 var testChain = require("./responses/test-chain");
 var showBanana = function(context){
     console.log('showBanana');
-    return 'endAbility';
+    return false;
 }
 var showOrange = function(context){
     console.log('showOrange');
-    return 'endAbility'
+    return false;
 }
 var commandNotFound = require("./responses/command-not-found");
 
@@ -19,9 +19,6 @@ module.exports = [
     response: testEnd,
     commands: [
       /^(.*?(\btest\b)[^$]*)$/i
-    ],
-    highlightCommands:[
-      'testEnd'
     ]
   },
 
@@ -31,9 +28,6 @@ module.exports = [
     response: testChain,
     commands: [
       /^(.*?(\btestchain\b)[^$]*)$/i
-    ],
-    highlightCommands:[
-      'testChain'
     ]
   },
 
@@ -48,25 +42,19 @@ module.exports = [
         name: 'showBanana',
         response: showBanana,
         commands: [/^(.*?(\bbanana\b)[^$]*)$/i],
-        highlightCommands:[]
       },
       {
         name: 'showOrange',
         response: showOrange,
         commands: [/^(.*?(\borange\b)[^$]*)$/i],
-        highlightCommands:[]
       },
-    ],
-    highlightCommands: [
-      'Show Banana',
     ]
   },
 
   {
     name:'commandNotFound',
     response: commandNotFound,
-    commands: [],
-    highlightCommands: []
+    commands: []
   }
 
 ]// responseList
