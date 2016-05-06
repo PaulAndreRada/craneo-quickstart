@@ -22,11 +22,11 @@ node app.js
 ###Send the bot a message
 Open your browser to http://localhost:3000/.
 In the input bar on the bottom you can write a set of commands to the bot. 
-Available commands are: 
-  -"Hey" or "Hello"
-  -"Chain", followed by either "Foo" or "Bar"
-  -"Show Invaders"
-  -"Show Breakout"
+Available commands are: </br>
+  -"Hey" or "Hello"</br>
+  -"Chain", followed by either "Foo" or "Bar"</br>
+  -"Show Invaders"</br>
+  -"Show Breakout"</br>
   
 ### Next
 Whant to learn how to use Craneo? 
