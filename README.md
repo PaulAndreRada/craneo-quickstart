@@ -31,3 +31,4 @@ Available commands are: </br>
 ### Next
 Whant to learn how to use Craneo? 
 Open the `response-list.js` file and try to figure out how those commands worked.
+Or you can check the <a href="http://paulandrerada.github.io/craneo/">Docs</a>.
