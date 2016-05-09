@@ -8,7 +8,7 @@ git clone https://github.com/PaulAndreRada/craneo-quickstart
 ```
 
 ###Install
-Download and isntall the latest craneo version
+Download and install the latest craneo version
 
 ```bash
 npm install --save craneo
