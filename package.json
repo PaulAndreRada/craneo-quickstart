@@ -1,8 +1,8 @@
 {
-  "name": "skel_bot_tester",
+  "name": "craneo-template",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/PaulAndreRada/skel_bot_tester#readme",
   "dependencies": {
-    "craneo": "^1.0.4"
+    "craneo": "^1.0.7"
   }
 }

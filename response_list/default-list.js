@@ -1,8 +1,11 @@
 
-// responses
-var helloWorld = require("./responses/hello-world");
-var responseChain = require("./responses/response-chain");
-var commandNotFound = require("./responses/command-not-found");
+/* response examples */
+// Basic Response
+var helloWorld = require("../responses/hello-world");
+// Response with a chain
+var responseChain = require("../responses/response-chain");
+// Command Not found default
+var commandNotFound = require("../responses/command-not-found");
 
 // default responseList
 var responseList = [
@@ -12,7 +15,7 @@ var responseList = [
     response: helloWorld,
     commands: [
       /^(.*?(\bhello\b)[^$]*)$/i,
-      /^(.*?(\bhey\b)[^$]*)$/i
+      /^(.*?(\barise\b)[^$]*)$/i
     ]
   },
 
@@ -33,16 +36,16 @@ var responseList = [
     responseList:
     [
       {
-        name: 'showSpaceInvaders',
+        name: 'spaceInvaders',
         response: function(context){
-          console.log('Space Invaders!');
+          console.log('Showing Space Invaders!');
         },
         commands: [/^(.*?(\binvaders\b)[^$]*)$/i],
       },
       {
-        name: 'showBreakout',
+        name: 'Breakout',
         response: function(context){
-          console.log('Breakout!');
+          console.log('Showing Breakout!');
           return false;
         },
         commands: [/^(.*?(\bbreakout\b)[^$]*)$/i],
