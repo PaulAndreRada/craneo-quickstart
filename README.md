@@ -19,7 +19,7 @@ npm install --save craneo
 node app.js
 ```
 
-###Send the bot a message
+### Send the bot a message
 Open your browser to http://localhost:3000/.</br>
 In the input bar on the bottom you can write a set of commands to the bot.</br> 
 Available commands are: </br>
