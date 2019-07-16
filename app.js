@@ -9,7 +9,7 @@ var responseList = require('./response-list');
 var Craneo = require('craneo');
 
 /* Create an instance of your Craneo Bot
- * Passing it the your default response list
+ * Passing it your default response list
  */
 var bot = Craneo({responseList: responseList});
 
