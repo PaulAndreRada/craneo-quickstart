@@ -2,19 +2,19 @@
 A quick start template for the Craneo bot Framework.
 
 
-###Download
+### Download
 ```bash
 git clone https://github.com/PaulAndreRada/craneo-quickstart
 ```
 
-###Install
+### Install
 Download and install the latest craneo version
 
 ```bash
 npm install --save craneo
 ```
 
-###Start the server
+### Start the server
 ```bash 
 node app.js
 ```
